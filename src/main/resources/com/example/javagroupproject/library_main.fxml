@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javagroupproject.LibraryMainController"
+            prefWidth="400" prefHeight="350"
+            style="-fx-background-color: white;">
+
+    <VBox alignment="CENTER" spacing="15" layoutX="50" layoutY="40"
+          prefWidth="300" prefHeight="270">
+
+        <Label text="LIBRARY MANAGEMENT SYSTEM"
+               wrapText="true"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #000000; -fx-text-alignment: center;"/>
+
+        <VBox spacing="10" alignment="CENTER">
+            <Button fx:id="adminBtn" text="Admin" onAction="#handleAdmin"
+                    style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 120; -fx-pref-height: 30;"/>
+
+            <Button fx:id="memberBtn" text="Member" onAction="#handleMember"
+                    style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 120; -fx-pref-height: 30;"/>
+        </VBox>
+
+        <Button fx:id="aboutBtn" text="ABOUT US" onAction="#handleAbout"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 180; -fx-pref-height: 35;"/>
+    </VBox>
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</AnchorPane>

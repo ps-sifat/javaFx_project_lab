@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javagroupproject.AdminPanelController"
+            prefWidth="430" prefHeight="370"
+            style="-fx-background-color: white;">
+
+    <!-- Back Button -->
+    <Button fx:id="backBtn" text="← Back" onAction="#handleBack"
+            layoutX="10" layoutY="10"
+            style="-fx-background-color: transparent; -fx-text-fill: black; -fx-font-weight: bold; -fx-font-size: 12px;"/>
+
+    <VBox alignment="CENTER" spacing="12"
+          layoutX="90" layoutY="60"
+          prefWidth="250" prefHeight="300">
+
+        <Label text="ADMIN PANEL"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: black;"/>
+
+        <Button text="Add New Member" fx:id="addMemberBtn" onAction="#handleAddMember"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200; -fx-pref-height: 35;"/>
+
+        <Button text="Add New Book" fx:id="addBookBtn" onAction="#handleAddBook"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200; -fx-pref-height: 35;"/>
+
+        <Button text="Checkout Book" fx:id="checkoutBtn" onAction="#handleCheckout"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200; -fx-pref-height: 35;"/>
+
+        <Button text="View Book Details" fx:id="viewBooksBtn" onAction="#handleViewBooks"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200; -fx-pref-height: 35;"/>
+
+        <Button text="View Member Details" fx:id="viewMembersBtn" onAction="#handleViewMembers"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200; -fx-pref-height: 35;"/>
+
+    </VBox>
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+</AnchorPane>
